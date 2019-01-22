@@ -1,0 +1,1 @@
+java -cp "Libs\\*;.\\*" org.testng.TestNG TestSuiteFiles\\Day4TestSuite.xml

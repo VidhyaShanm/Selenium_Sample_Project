@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Day2Suite">
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+	</listeners>
+
+
+	<test name="ChromeTest" enabled="false">
+		<parameter name="browserToOpen" value="chrome"></parameter>
+		<parameter name="appUrl" value="https://www.seleniumhq.org"></parameter>
+
+		<classes>
+			<class name="testcases.Day2_TitleValidation" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test name="FireFoxTest" enabled="false">
+		<parameter name="browserToOpen" value="firefox"></parameter>
+		<parameter name="appUrl" value="https://www.seleniumhq.org"></parameter>
+
+		<classes>
+			<class name="testcases.Day2_TitleValidation" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="PageContentTest" enabled="false">
+		<parameter name="browserToOpen" value="chrome"></parameter>
+		<parameter name="appUrl" value="https://www.seleniumhq.org"></parameter>
+
+		<classes>
+			<class name="testcases.Day2_PageContentValiidation" />
+		</classes>
+	</test> <!-- Test -->
+
+
+	<test name="ElementExistanceValidation" enabled="false">
+		<parameter name="browserToOpen" value="chrome"></parameter>
+		<parameter name="appUrl" value="https://www.seleniumhq.org"></parameter>
+
+		<classes>
+			<class name="testcases.Day2_ElementExistanceValidation" />
+		</classes>
+	</test> <!-- Test -->
+	
+	
+	<test name="buttonCaptionValidation" enabled="true">
+		<parameter name="browserToOpen" value="chrome"></parameter>
+		<parameter name="appUrl" value="https://www.seleniumhq.org"></parameter>
+
+		<classes>
+			<class name="testcases.Day2_AttributeValueValidation" />
+		</classes>
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->

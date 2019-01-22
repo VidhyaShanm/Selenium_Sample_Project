@@ -1,0 +1,1 @@
+java -Dwebdriver.ie.driver=IEDriverServer.exe -jar selenium-server-standalone-3.14.0.jar -role wd -hub http://localhost:4455/grid/register -browser "browserName=internet explorer, maxInstances=1"

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Day2Suite">
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+	</listeners>
+
+
+	<test name="EndToEndTest" enabled="true">
+		<parameter name="browserToOpen" value="chrome"></parameter>
+		<parameter name="appUrl"
+			value="https://www.mvnrepository.com"></parameter>
+
+		<classes>
+			<class
+				name="testcases.Day3_FunctionalValidationWithSynchronization" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="UsingJavaScriptExecutor" enabled="false">
+		<parameter name="browserToOpen" value="chrome"></parameter>
+		<parameter name="appUrl" value="http://mvnrepository.com"></parameter>
+
+		<classes>
+			<class name="testcases.Day3_UsingJavaScriptExecutor" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="AjaxElements" enabled="false">
+		<parameter name="browserToOpen" value="chrome"></parameter>
+		<parameter name="appUrl" value="https://www.bing.com"></parameter>
+
+		<classes>
+			<class name="testcases.Day3_InteractingWithDynamicAjaxElement" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="HTMLTable" enabled="false">
+		<parameter name="browserToOpen" value="chrome"></parameter>
+		<parameter name="appUrl"
+			value="https://www.seleniumhq.org/download/"></parameter>
+
+		<classes>
+			<class name="testcases.Day3_ReadingHtmlTable" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="HTMLWindowPopup" enabled="false">
+		<parameter name="browserToOpen" value="chrome"></parameter>
+		<parameter name="appUrl" value="https://images.google.co.in"></parameter>
+
+		<classes>
+			<class name="testcases.Day3_InteractingWithHtmlAndWindowPopup" />
+		</classes>
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Day4Suite">
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+	</listeners>
+
+
+	<test name="BOTLibrary" enabled="false">
+		<parameter name="browserToOpen" value="chrome"></parameter>
+		<parameter name="appUrl"
+			value="https://www.amazon.in"></parameter>
+
+		<classes>
+			<class
+				name="testcases.Day4_UsingBOTLibrary" />
+		</classes>
+	</test> <!-- Test -->
+
+
+<test name="POMLibrary" enabled="false">
+		<parameter name="browserToOpen" value="chrome"></parameter>
+		<parameter name="appUrl"
+			value="https://www.mvnrepository.com"></parameter>
+
+		<classes>
+			<class
+				name="testcases.Day4_UsingPOM" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="POMLibraryPF" enabled="true">
+		<parameter name="browserToOpen" value="chrome"></parameter>
+		<parameter name="appUrl"
+			value="https://www.mvnrepository.com"></parameter>
+
+		<classes>
+			<class
+				name="testcases.Day4_UsingPOM" />
+		</classes>
+	</test> <!-- Test -->
+
+	
+
+
+</suite> <!-- Suite -->

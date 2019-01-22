@@ -1,0 +1,15 @@
+package testngexamples;
+
+import org.testng.annotations.Test;
+
+public class TestNG6
+{
+	
+	@Test
+	public void login(String uid,String pwd)
+	{
+		System.out.println(uid + "\t" + pwd);
+	}
+	
+	
+}

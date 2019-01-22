@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Day2Suite">
+
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+	</listeners>
+
+
+	<test name="EndToEndTest" enabled="true">
+		<parameter name="browserToOpen" value="chrome"></parameter>
+		<parameter name="appUrl" value="https://www.mvnrepository.com"></parameter>
+
+		<classes>
+			<class name="testcases.Day3_FunctionalValidationWithSynchronization" />
+		</classes>
+	</test> <!-- Test -->
+
+
+
+
+</suite> <!-- Suite -->

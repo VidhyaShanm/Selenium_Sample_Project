@@ -1,0 +1,30 @@
+package testcases;
+
+import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+import commonlib.WebDriverTestNGBaseClass;
+
+public class Day2_AttributeValueValidation extends WebDriverTestNGBaseClass
+{
+
+	
+	@Test
+	public void titleValidation()
+	{
+		String sExpected, sActual;
+		
+		sExpected ="Selenium - Web Browser Automation";
+		sActual = oDriver.getTitle();
+		
+		
+		Reporter.log("Expected Title ="+ sExpected);
+		Reporter.log("Actual  Title ="+ sActual);
+		
+		Assert.assertEquals(sActual, sExpected);
+		
+	}
+	
+	
+}

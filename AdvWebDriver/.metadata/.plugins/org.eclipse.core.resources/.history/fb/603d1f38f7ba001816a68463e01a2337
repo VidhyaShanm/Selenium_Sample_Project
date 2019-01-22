@@ -1,0 +1,13 @@
+package commonlib;
+
+public class AutomationConstants {
+	public static String sIEDriverPath="C:\\WorkDxc\\DriverExes\\IEDriverServer.exe";
+	public static String sChromeDriver="C:\\WorkDxc\\DriverExes\\chromedriver.exe";
+	public static String sGeckoDriver="C:\\WorkDxc\\DriverExes\\geckodriver.exe";
+	
+	public static long lngPageLoadTimeout =60L;
+	public static long lngImplicitWaitTimeout =30L;
+	
+	public static boolean bUseProxySettings =true;
+	public static String sProxyString ="web-proxy.atl.hp.com:8080";
+}

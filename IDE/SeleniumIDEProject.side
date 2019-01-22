@@ -1,0 +1,91 @@
+{
+  "id": "022e1c4c-4723-4aa2-a901-8a44c60a2be3",
+  "version": "1.1",
+  "name": "SeleniumIDEProject",
+  "url": "https://www.seleniumhq.org",
+  "tests": [{
+    "id": "42a7ca22-9200-47fe-8119-5b949b02256b",
+    "name": "tc-01",
+    "commands": [{
+      "id": "22c6f43b-5d79-46f9-aee4-b15a13f80453",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73e7af24-9b09-4fe1-9fd7-adaa177beb75",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Projects",
+      "targets": [
+        ["linkText=Projects", "linkText"],
+        ["css=a[title=\"Selenium Projects\"]", "css"],
+        ["xpath=//a[contains(text(),'Projects')]", "xpath:link"],
+        ["xpath=//li[@id='menu_projects']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/projects/')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f33d6282-9066-4b7b-8565-1ce6c7313aa5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Download",
+      "targets": [
+        ["linkText=Download", "linkText"],
+        ["css=a[title=\"Get Selenium\"]", "css"],
+        ["xpath=//a[contains(text(),'Download')]", "xpath:link"],
+        ["xpath=//li[@id='menu_download']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/download/')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6026c373-98e1-44b3-9087-d8cfa04ced81",
+      "comment": "",
+      "command": "click",
+      "target": "id=q",
+      "targets": [
+        ["id=q", "id"],
+        ["name=q", "name"],
+        ["css=#q", "css"],
+        ["xpath=//input[@id='q']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox_016909259827549404702:hzru01fldsm']/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e049c6df-2af4-4f5d-b4ab-e051a3ae736c",
+      "comment": "",
+      "command": "type",
+      "target": "id=q",
+      "targets": [
+        ["id=q", "id"],
+        ["name=q", "name"],
+        ["css=#q", "css"],
+        ["xpath=//input[@id='q']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox_016909259827549404702:hzru01fldsm']/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "selenium"
+    }, {
+      "id": "ec0dfa81-3c62-4e99-8f30-20379f9b358f",
+      "comment": "",
+      "command": "submit",
+      "target": "id=searchbox_016909259827549404702:hzru01fldsm",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d1d966fb-b4e6-49b5-a7ee-0475c13b4871",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["42a7ca22-9200-47fe-8119-5b949b02256b"]
+  }],
+  "urls": ["https://www.seleniumhq.org/"],
+  "plugins": []
+}

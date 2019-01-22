@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Day2Suite]">
+  <parameter name="runInGridEnv" value="true"/>
+  <parameter name="gridHubUrl" value="http://localhost:4455/wd/hub"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="buttonCaptionValidation(failed)">
+    <parameter name="browserToOpen" value="chrome"/>
+    <parameter name="appUrl" value="https://www.seleniumhq.org"/>
+    <classes>
+      <class name="testcases.Day2_AttributeValueValidation">
+        <methods>
+          <include name="automationStart"/>
+          <include name="automationStop"/>
+          <include name="buttonCaptionValidation"/>
+        </methods>
+      </class> <!-- testcases.Day2_AttributeValueValidation -->
+    </classes>
+  </test> <!-- buttonCaptionValidation(failed) -->
+</suite> <!-- Failed suite [Day2Suite] -->

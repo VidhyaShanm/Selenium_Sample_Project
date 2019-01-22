@@ -1,0 +1,35 @@
+package testngexamples;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class TestNG7
+{
+	
+	@Test
+	public void t4()
+	{
+		System.out.println("t4...");
+	}
+	
+	@BeforeMethod
+	public void methodSetup()
+	{
+		System.out.println("method setup");
+	}
+	
+	@AfterMethod
+	public void methodTearDown()
+	{
+		System.out.println("method tear down....");
+		
+	}
+	
+	@Test
+	public void t3()
+	{
+		System.out.println("t3...");
+	}
+
+}

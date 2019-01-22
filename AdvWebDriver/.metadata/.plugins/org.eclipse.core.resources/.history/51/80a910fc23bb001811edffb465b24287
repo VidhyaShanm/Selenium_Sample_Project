@@ -1,0 +1,35 @@
+package testngexamples;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class TestNG7
+{
+	
+	@Test
+	public void t4()
+	{
+		System.out.println("t4...");
+	}
+	
+	@BeforeClass
+	public void classSetup()
+	{
+		System.out.println("class setup");
+	}
+	
+	@AfterClass
+	public void classTearDown()
+	{
+		System.out.println("Class tear down....");
+		
+	}
+	
+	@Test
+	public void t3()
+	{
+		System.out.println("t3...");
+	}
+
+}

@@ -1,0 +1,1 @@
+java -Dwebdriver.gecko.driver=geckodriver.exe -jar selenium-server-standalone-3.14.0.jar -role wd -hub http://16.155.85.160:4455/grid/register -browser "browserName=firefox, maxInstances=1"

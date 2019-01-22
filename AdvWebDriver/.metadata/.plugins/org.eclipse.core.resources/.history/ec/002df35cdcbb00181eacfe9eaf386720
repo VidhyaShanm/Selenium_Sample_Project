@@ -1,0 +1,26 @@
+package testcases;
+
+import org.testng.annotations.Test;
+
+
+import commonlib.CommonUtils;
+import commonlib.WebDriverTestNGBaseClass;
+
+public class Day3_UsingJavaScriptExecutor extends WebDriverTestNGBaseClass
+{
+
+	
+	@Test
+	public void pageScrollValidation() throws Exception
+	{
+		
+		
+	  CommonUtils.scrollPageTo(oDriver, 0, 800);
+	  Thread.sleep(3000);
+		
+	  CommonUtils.scrollPageTo(oDriver, 0, 0);
+	  Thread.sleep(3000);
+	}
+	
+	
+}
